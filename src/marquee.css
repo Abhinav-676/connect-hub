@@ -1,0 +1,55 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 2rem 0; /* Adjust the vertical margin as needed */
+  padding: 80px 0; /* Default padding top and bottom */
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-image {
+  height: 8rem; /* Adjust the height of the images */
+  margin-right: 80px; /* Adjust the space between images */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.marquee-image:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Keyframes for marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .marquee-container {
+    padding: 50px 0; /* Adjust padding top and bottom for tablet screens */
+  }
+  
+  .marquee-image {
+    height: 6rem; /* Adjust the height for tablet screens */
+    margin-right: 30px; /* Adjust the space between images for tablet screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-container {
+    padding: 30px 0; /* Adjust padding top and bottom for mobile screens */
+  }
+  
+  .marquee-image {
+    height: 4rem; /* Adjust the height for mobile screens */
+    margin-right: 20px; /* Adjust the space between images for mobile screens */
+  }
+}
