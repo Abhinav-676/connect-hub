@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './index.css'; // Ensure you have Tailwind CSS included
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
