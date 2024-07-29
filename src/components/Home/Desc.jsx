@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Desc = () => {
+const Desc = () => {
   return (
 
     <div className="text-3xl leading-normal text-gray-900 dark:text-white text-center bg-blue-700 text-white	 w-full py-8 drop-shadow-sm">Connecting With NGOs
@@ -9,3 +9,5 @@ export const Desc = () => {
     </div>
   )
 }
+
+export default Desc
