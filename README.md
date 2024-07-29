@@ -1,8 +1,12 @@
-# React + Vite
+# IBM SkillsBuild Final Deliverable
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ConnectHub emulates a non-governmental organization (NGO) that addresses a variety of issues.
 
-Currently, two official plugins are available:
+Features of the website:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* ConnectHub aims to contribute to Sustainable Development Goals.
+* The website offers a user friendly and modern design
+* The website is made responisve on both mobile and desktop devices 
+
+
+Note: This is just a showcase project and not an actuall NGO.
