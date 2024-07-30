@@ -1,7 +1,7 @@
 function AboutHeroSection() {
     return (
         <section>
-        <div className="h-96 flex justify-center items-center bg-center bg-[url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnetdoctor.cdnds.net%2F18%2F09%2F1600x800%2Flandscape-1519752279-holding-elderly-hands.jpg&f=1&nofb=1&ipt=5548e24ba4f35fbff3106e9be13f49379283ffa1bd1248e84f4d4846741702cb&ipo=images')]">
+        <div className="h-96 flex justify-center items-center bg-center bg-[url('https://img.freepik.com/free-photo/scene-from-care-job-with-senior-patient-being-take-care_23-2151224164.jpg?t=st=1722361081~exp=1722364681~hmac=f06ac16ffd565f7cb98cd9b0297731e15791f53d604937d6d05e3622ff7ccd5c&w=1380')]">
             <h1 className="text-8xl font-bold text-gray-100"><span>Together</span> <span>We Can</span></h1>
         </div>
         </section>
