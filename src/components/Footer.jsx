@@ -14,8 +14,8 @@ const Footer = () => {
             <ul className="list-none p-0">
               <li className="mb-2"><a href="#home" className="text-gray-100 hover:text-gray-300">Home</a></li>
               <li className="mb-2"><a href="#about" className="text-gray-100 hover:text-gray-300">About Us</a></li>
-              <li className="mb-2"><a href="#services" className="text-gray-100 hover:text-gray-300">Services</a></li>
-              <li className="mb-2"><a href="#contact" className="text-gray-100 hover:text-gray-300">Contact</a></li>
+              <li className="mb-2"><a href="#services" className="text-gray-100 hover:text-gray-300">Browse Blogs</a></li>
+              <li className="mb-2"><a href="#contact" className="text-gray-100 hover:text-gray-300">Connect With US</a></li>
             </ul>
           </div>
   
