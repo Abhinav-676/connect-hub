@@ -1,8 +1,8 @@
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  margin: 2rem 0; /* Adjust the vertical margin as needed */
-  padding: 80px 0; /* Default padding top and bottom */
+  margin: 0 0; /* Adjust the vertical margin as needed */
+  padding: 0 0; /* Default padding top and bottom */
   position: relative;
 }
 
@@ -34,7 +34,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .marquee-container {
-    padding: 50px 0; /* Adjust padding top and bottom for tablet screens */
+    padding: 40px 0; /* Adjust padding top and bottom for tablet screens */
   }
   
   .marquee-image {

@@ -3,7 +3,7 @@ import './marquee.css'; // Import custom CSS for marquee
 
 const Marquee = () => {
   return (
-    <div className="marquee-container">
+      <div className="marquee-container">
       <div className="marquee">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkOe-triCNBb1RDhgibcuPmwTi9lx9GymwQ&s" alt="Placeholder" className="marquee-image rounded-full" />
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEsqNl10S9-OUnb2U0B1DesbMA8johWsEOpQ&s" alt="Placeholder" className="marquee-image" />

@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import './index.css'; // Ensure you have Tailwind CSS included
+
+import img1 from '../../assets/img1.jpg'
+import img2 from '../../assets/img2.jpg'
+import img3 from '../../assets/img3.jpg'
+import Section from '../Section';
+
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { id: 1, imageUrl: 'https://img.freepik.com/free-photo/people-celebrating-world-population-day_23-2151493191.jpg?size=626&ext=jpg&ga=GA1.1.223006692.1710765573&semt=sph' },
-    { id: 2, imageUrl: 'https://img.freepik.com/free-photo/international-day-education-illustration_23-2151101756.jpg?size=626&ext=jpg&ga=GA1.1.223006692.1710765573&semt=sph' },
-    { id: 3, imageUrl: 'https://img.freepik.com/free-photo/indian-republic-day-celebration-digital-art-with-children_23-2151070671.jpg?size=626&ext=jpg&ga=GA1.1.223006692.1710765573&semt=sph' },
+    { id: 1, imageUrl: img1 },
+    { id: 2, imageUrl: img2 },
+    { id: 3, imageUrl: img3 },
   ];
 
   useEffect(() => {
@@ -21,11 +26,12 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden w-full h-[75vh]">
+    <Section className="mt-4">
+      <div className="relative overflow-hidden w-full">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide) => (
           <div key={slide.id} className="flex-shrink-0 w-full h-full">
-            <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className="w-full h-full object-cover" />
+            <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className="w-full object-center rounded" />
           </div>
         ))}
       </div>
@@ -42,6 +48,7 @@ const Carousel = () => {
         ›
       </button>
     </div>
+    </Section>
   );
 };
 
