@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../../assets/img1.jpg'
-import img2 from '../../assets/img2.jpg'
-import img3 from '../../assets/img3.jpg'
 import Section from '../Section';
 
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { id: 1, imageUrl: img1 },
-    { id: 2, imageUrl: img2 },
-    { id: 3, imageUrl: img3 },
+    { id: 1, imageUrl: 'https://cdn.pixabay.com/photo/2017/10/03/17/53/nature-2813487_960_720.jpg' },
+    { id: 2, imageUrl: 'https://cdn.pixabay.com/photo/2017/06/04/16/32/canyon-2371497_960_720.jpg' },
+    { id: 3, imageUrl: 'https://cdn.pixabay.com/photo/2017/09/16/19/14/fog-2756456_960_720.jpg' },
   ];
 
   useEffect(() => {
@@ -27,7 +24,7 @@ const Carousel = () => {
 
   return (
     <Section className="mt-4">
-      <div className="relative overflow-hidden w-full">
+      <div className="relative overflow-hidden w-full max-h-[40vh] rounded-lg">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide) => (
           <div key={slide.id} className="flex-shrink-0 w-full h-full">
