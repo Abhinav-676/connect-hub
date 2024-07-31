@@ -1,6 +1,7 @@
 import React from 'react';
+import Section from '../Section';
 
-const CardGrid = () => {
+const Programmes = () => {
   const cards = [
     {
       id: 1,
@@ -26,24 +27,26 @@ const CardGrid = () => {
 
   return (
     <>
-    <div className='text-center text-gray-900 font-semibold text-4xl my-12'>Our Programmes</div>
-    <div className="container mx-auto px-4 py-8 w-3/4 my-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {cards.map((card) => (
-          <div key={card.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white my-4">
-            <img className="w-full h-48 object-cover" src={card.image} alt={card.title} />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-1 text-center text-gray-900">{card.title}</div>
-              <p className="text-gray-700 text-base">
-                {card.description}
-              </p>
+    <Section>
+      <div className='text-center text-gray-900 font-semibold text-4xl mb-12'>Our Programmes</div>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {cards.map((card) => (
+            <div key={card.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white my-4">
+              <img className="w-full h-48 object-cover" src={card.image} alt={card.title} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-1 text-center text-gray-900">{card.title}</div>
+                <p className="text-gray-700 text-base">
+                  {card.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      </Section>
     </>
   );
 };
 
-export default CardGrid;
+export default Programmes;
