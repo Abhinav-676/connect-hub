@@ -11,7 +11,8 @@ export default {
         paleyellow: '#FFFACD',
         pastelblue: "#AEEEEE",
         logoprimary: '#e7ae4c',
-        logosecondary: '#453580'
+        logosecondary: '#453580',
+        logolightprimary: "#f6deb7"
       },
       spacing: {
         '128':'32rem',

@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
+import Section from '../Section';
 
 const VideoCollage = () => {
   const videos = [
     {
       id: 1,
-      src: 'https://videocdn.cdnpk.net/videos/b4c78911-732d-4936-b328-31c51f1e4a92/horizontal/previews/clear/large.mp4?token=exp=1722439570~hmac=65f7f11658aabe8fbd39837ab0afaf592e5ca2928f591c6421835f329db23755', // Replace with your video URL or path
+      src: 'https://cdn.pixabay.com/video/2020/09/13/49813-458438871_large.mp4', // Replace with your video URL or path
       alt: 'Video 1'
     },
     {
       id: 2,
-      src: 'https://videocdn.cdnpk.net/videos/a6cd3435-2e40-4fc5-916a-7cb521c5c678/horizontal/previews/clear/large.mp4?token=exp=1722440050~hmac=8564f8659efcd9f584524c9736d9494d178995a6a23c020d925408f313a0920f', // Replace with your video URL or path
+      src: 'https://cdn.pixabay.com/video/2016/09/22/5631-183849543_tiny.mp4', // Replace with your video URL or path
       alt: 'Video 2'
     }
   ];
@@ -24,7 +25,8 @@ const VideoCollage = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center w-full h-screen bg-gray-200">
+    <Section>
+      <div className="flex justify-center items-center w-full h-screen bg-gray-200">
       <div className="relative w-[70%] h-[70vh]">
         {videos.map((video, index) => (
           <div
@@ -44,6 +46,7 @@ const VideoCollage = () => {
         ))}
       </div>
     </div>
+    </Section>
   );
 };
 

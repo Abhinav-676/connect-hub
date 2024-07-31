@@ -30,7 +30,7 @@ const Programmes = () => {
     <Section>
       <div className='text-center text-gray-900 font-semibold text-4xl mb-12'>Our Programmes</div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-8">
           {cards.map((card) => (
             <div key={card.id} className="max-w-sm rounded overflow-hidden shadow-lg bg-white my-4">
               <img className="w-full h-48 object-cover" src={card.image} alt={card.title} />
