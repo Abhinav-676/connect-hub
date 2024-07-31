@@ -4,12 +4,12 @@ const VideoCollage = () => {
   const videos = [
     {
       id: 1,
-      src: 'https://videocdn.cdnpk.net/videos/9eeba5d1-fe70-414a-a9b8-407689dc37b2/horizontal/previews/clear/large.mp4?token=exp=1722153231~hmac=2249d3bbdd8d0cff9f4455040e0f10d5b3e00eab2cc4da4aa05aec50f1bbdbab', // Replace with your video URL or path
+      src: 'https://videocdn.cdnpk.net/videos/b4c78911-732d-4936-b328-31c51f1e4a92/horizontal/previews/clear/large.mp4?token=exp=1722439570~hmac=65f7f11658aabe8fbd39837ab0afaf592e5ca2928f591c6421835f329db23755', // Replace with your video URL or path
       alt: 'Video 1'
     },
     {
       id: 2,
-      src: 'https://videocdn.cdnpk.net/videos/a94a513b-d38f-49a5-a29f-c9afe2c01638/horizontal/previews/clear/large.mp4?token=exp=1722153370~hmac=bdd013bdc2b3c4cae867aa8ce0e6a707f5274d44957517ab8ffcfc7b5914aa6d', // Replace with your video URL or path
+      src: 'https://videocdn.cdnpk.net/videos/a6cd3435-2e40-4fc5-916a-7cb521c5c678/horizontal/previews/clear/large.mp4?token=exp=1722440050~hmac=8564f8659efcd9f584524c9736d9494d178995a6a23c020d925408f313a0920f', // Replace with your video URL or path
       alt: 'Video 2'
     }
   ];
