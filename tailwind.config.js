@@ -8,7 +8,15 @@ export default {
     extend: {
       colors: {
         grayblue: '#cfd8dc', 
+        paleyellow: '#FFFACD',
+        pastelblue: "#AEEEEE",
+        logoprimary: '#e7ae4c',
+        logosecondary: '#453580'
       },
+      spacing: {
+        '128':'32rem',
+        '200': '50rem'
+      }
     },
   },
   plugins: [
