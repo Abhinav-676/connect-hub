@@ -1,17 +1,16 @@
 import Desc from '../components/Home/Desc'
-import CardGrid from '../components/Home/CardGrid'
+import Programmes from '../components/Home/Programmes'
 import Carousel from '../components/Home/Carousel'
-import VideoCollage from '../components/Home/VideoCollage'
-import Marquee from '../components/Marquee/Marquee'
+import Organisations from '../components/Home/Organisations'
 
 function Home() {
     return (
         <>
         <Carousel />
         <Desc />
-        <Marquee />
+        <Organisations />
         {/* <VideoCollage /> */}
-        <CardGrid />
+        <Programmes />
         </>
     )
 }

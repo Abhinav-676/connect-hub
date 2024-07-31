@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import img1 from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
 import img3 from '../../assets/img3.jpg'
+import Section from '../Section';
 
 
 const Carousel = () => {
@@ -25,8 +26,8 @@ const Carousel = () => {
   };
 
   return (
-    <section className='flex justify-center py-16 bg-logoprimary'>
-      <div className="relative overflow-hidden max-w-200">
+    <Section className="mt-4">
+      <div className="relative overflow-hidden w-full">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide) => (
           <div key={slide.id} className="flex-shrink-0 w-full h-full">
@@ -47,7 +48,7 @@ const Carousel = () => {
         ›
       </button>
     </div>
-    </section>
+    </Section>
   );
 };
 
