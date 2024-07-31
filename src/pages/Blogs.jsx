@@ -1,5 +1,5 @@
 import BlogList from "../components/Blogs/BlogList";
-import HeroSection from "../components/Blogs/HeroSection";
+import HeroSection from "../components/HeroSection";
 
 // image, title, ngo, description
 
@@ -39,7 +39,7 @@ const blogPosts = [
 function Blog() {
     return (
         <>
-         <HeroSection />
+         <HeroSection img="https://img.freepik.com/free-photo/high-angle-laptop-books-arrangement_23-2149765845.jpg?t=st=1722261058~exp=1722264658~hmac=d7bd06bad318f62b2fd2d45b4c619dd8a64250d1835ac68c211fa0eeba8d3b17&w=900" title="Blog" />
          <BlogList blogPosts={blogPosts} />
         </>
     )
