@@ -6,7 +6,7 @@ function ContentSection({title, children}) {
             <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-800 pb-2 pl-4">
                 {title}
             </h2>
-            <div className="flex justify-center align-center text-lg">
+            <div className="flex justify-center align-center text-md">
                 {children}
             </div>
         </Section>
