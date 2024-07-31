@@ -8,9 +8,9 @@ function Home() {
     return (
         <>
         <Carousel />
-        <Marquee />
         <Desc />
-        <VideoCollage />
+        <Marquee />
+        {/* <VideoCollage /> */}
         <CardGrid />
         </>
     )

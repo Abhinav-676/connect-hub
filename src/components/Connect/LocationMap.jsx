@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 function LocationMap() {
     const [width, changeWidth] = useState(window.innerWidth)
-    const [height, changeHeight] = useState(460)
+    const [height, changeHeight] = useState(350)
 
     useEffect(() => {
         window.addEventListener('resize', ()=> {
